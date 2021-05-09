@@ -51,6 +51,7 @@
             this.btn1 = new System.Windows.Forms.Button();
             this.btn4 = new System.Windows.Forms.Button();
             this.btn7 = new System.Windows.Forms.Button();
+            this.btnClean = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtResult
@@ -60,6 +61,7 @@
             this.txtResult.Name = "txtResult";
             this.txtResult.Size = new System.Drawing.Size(530, 56);
             this.txtResult.TabIndex = 48;
+            this.txtResult.Text = "0";
             this.txtResult.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // btnSqrt
@@ -67,7 +69,7 @@
             this.btnSqrt.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnSqrt.Location = new System.Drawing.Point(12, 135);
             this.btnSqrt.Name = "btnSqrt";
-            this.btnSqrt.Size = new System.Drawing.Size(262, 55);
+            this.btnSqrt.Size = new System.Drawing.Size(180, 55);
             this.btnSqrt.TabIndex = 47;
             this.btnSqrt.Text = "Sqtr";
             this.btnSqrt.UseVisualStyleBackColor = true;
@@ -109,11 +111,11 @@
             // btnBackspace
             // 
             this.btnBackspace.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnBackspace.Location = new System.Drawing.Point(280, 135);
+            this.btnBackspace.Location = new System.Drawing.Point(381, 135);
             this.btnBackspace.Name = "btnBackspace";
-            this.btnBackspace.Size = new System.Drawing.Size(262, 55);
+            this.btnBackspace.Size = new System.Drawing.Size(161, 55);
             this.btnBackspace.TabIndex = 43;
-            this.btnBackspace.Text = "Backspace";
+            this.btnBackspace.Text = "⌫ ";
             this.btnBackspace.UseVisualStyleBackColor = true;
             this.btnBackspace.Click += new System.EventHandler(this.btnBackspace_Click);
             // 
@@ -304,11 +306,23 @@
             this.btn7.UseVisualStyleBackColor = true;
             this.btn7.Click += new System.EventHandler(this.btn7_Click);
             // 
+            // btnClean
+            // 
+            this.btnClean.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnClean.Location = new System.Drawing.Point(198, 135);
+            this.btnClean.Name = "btnClean";
+            this.btnClean.Size = new System.Drawing.Size(177, 55);
+            this.btnClean.TabIndex = 49;
+            this.btnClean.Text = "Clean";
+            this.btnClean.UseVisualStyleBackColor = true;
+            this.btnClean.Click += new System.EventHandler(this.btnClean_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(556, 455);
+            this.ClientSize = new System.Drawing.Size(556, 449);
+            this.Controls.Add(this.btnClean);
             this.Controls.Add(this.txtResult);
             this.Controls.Add(this.btnSqrt);
             this.Controls.Add(this.btnMC);
@@ -364,6 +378,7 @@
         private System.Windows.Forms.Button btn1;
         private System.Windows.Forms.Button btn4;
         private System.Windows.Forms.Button btn7;
+        private System.Windows.Forms.Button btnClean;
     }
 }
 

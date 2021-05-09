@@ -18,7 +18,7 @@ namespace Calculator
         double sum = 0;
         double memorySum = 0;
 
-        bool newCalc = false;
+        bool newCalc = true;
         bool nextNum = true;
         bool divByZero = false;
         public Form1()
@@ -502,6 +502,11 @@ namespace Calculator
         private void btnMC_Click(object sender, EventArgs e)
         {
             memorySum = 0;
+        }
+
+        private void btnClean_Click(object sender, EventArgs e)
+        {
+            txtResult.Text = null;
         }
     }
 }
